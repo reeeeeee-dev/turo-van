@@ -6,8 +6,8 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "turo-van",
   "compatibility_date": "2025-08-31",
-  "main": "server/index.ts",
   "assets": {
+    "directory": "dist",
     "not_found_handling": "single-page-application",
   },
   "observability": {
