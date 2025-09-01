@@ -10,6 +10,10 @@ import { KinesisContainer } from 'vue-kinesis'
   </header>
 
   <kinesis-container event="scroll">
-    <RouterView />
+    <RouterView v-slot="{ Component }">
+      <Transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </Transition>
+    </RouterView>
   </kinesis-container>
 </template>
