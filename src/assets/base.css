@@ -36,6 +36,20 @@
   --section-gap: 160px;
 }
 
+@theme {
+  --color-green-smoke-50: #f5f7ee;
+  --color-green-smoke-100: #e9ecdb;
+  --color-green-smoke-200: #d4dcba;
+  --color-green-smoke-300: #adbc80;
+  --color-green-smoke-400: #9dae6d;
+  --color-green-smoke-500: #809250;
+  --color-green-smoke-600: #63733d;
+  --color-green-smoke-700: #4d5932;
+  --color-green-smoke-800: #3f492b;
+  --color-green-smoke-900: #373f28;
+  --color-green-smoke-950: #1c2112;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);
