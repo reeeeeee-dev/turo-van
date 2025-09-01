@@ -1,9 +1,61 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const parallaxContainer = ref(null)
+const parallaxImage = ref(null)
+
+const handleScroll = () => {
+  if (parallaxImage.value) {
+    const scrolled = window.pageYOffset
+    const rate = scrolled * -0.5 // Adjust this value to control parallax speed
+    parallaxImage.value.style.transform = `translateY(${rate}px)`
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="bg-green-smoke-50 min-h-screen h-[5000px]">
+    <div ref="parallaxContainer" class="relative h-screen overflow-hidden">
+      <!-- Parallax background image -->
+      <div class="absolute inset-0">
+        <img
+          ref="parallaxImage"
+          src="@/assets/cars.jpg"
+          alt="Van Hero"
+          class="w-full h-screen object-cover"
+        />
+      </div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0">
+        <!-- Content -->
+        <div class="h-full flex items-center justify-center">
+          <div class="bg-black/80 rounded-md p-6 max-w-4xl mx-4">
+            <h1 class="text-green-smoke-50 text-4xl font-bold md:text-5xl lg:text-6xl text-center">
+              Welcome to our luxury transportation company
+              <span class="block text-green-smoke-300 text-2xl md:text-3xl lg:text-4xl mt-4">
+                The best way to explore Northwest Arkansas and beyond
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+
+<style scoped>
+/* Ensure smooth parallax movement */
+img {
+  will-change: transform;
+  transform: translateY(0);
+}
+</style>

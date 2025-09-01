@@ -1,6 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue'
+import { KinesisContainer } from 'vue-kinesis'
 </script>
 
 <template>
@@ -8,5 +9,7 @@ import Navbar from './components/Navbar.vue'
     <Navbar />
   </header>
 
-  <RouterView />
+  <kinesis-container event="scroll">
+    <RouterView />
+  </kinesis-container>
 </template>
