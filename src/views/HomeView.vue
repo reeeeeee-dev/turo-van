@@ -38,13 +38,18 @@ onUnmounted(() => {
       <div class="absolute inset-0">
         <!-- Content -->
         <div class="h-full flex items-center justify-center">
-          <div class="bg-black/80 rounded-md p-6 max-w-4xl mx-4">
-            <h1 class="text-green-smoke-50 text-4xl font-bold md:text-5xl lg:text-6xl text-center">
-              Welcome to our luxury transportation company
-              <span class="block text-green-smoke-300 text-2xl md:text-3xl lg:text-4xl mt-4">
-                The best way to explore Northwest Arkansas and beyond
-              </span>
+          <div class="text-center gap-4 flex flex-col items-center">
+            <h1 class="text-green-smoke-50 text-4xl font-bold md:text-5xl lg:text-6xl">
+              Luxury transportation rentals
             </h1>
+            <div class="text-green-smoke-300 text-lg">
+              The best way to explore Northwest Arkansas and beyond
+            </div>
+            <button
+              class="bg-green-smoke-50 text-green-smoke-950 px-4 py-2 w-max rounded-md text-xl"
+            >
+              Rent Now
+            </button>
           </div>
         </div>
       </div>
