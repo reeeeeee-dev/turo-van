@@ -5,13 +5,11 @@ import { KinesisContainer } from 'vue-kinesis'
 </script>
 
 <template>
-  <header>
-    <Navbar />
-  </header>
+  <Navbar />
 
   <kinesis-container event="scroll">
     <RouterView v-slot="{ Component }">
-      <Transition name="fade" mode="out-in">
+      <Transition name="fade" mode="out-of-view">
         <component :is="Component" />
       </Transition>
     </RouterView>
