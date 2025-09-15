@@ -1,11 +1,8 @@
 <template>
   <nav
-    class="sticky flex justify-between items-center top-0 z-50 shadow-lg p-4 bg-green-smoke-100/80 text-green-smoke-950"
+    class="fixed w-[calc(100%-64px)] rounded-xl flex justify-between items-center top-8 left-8 right-8 m-8 z-50 shadow-lg p-4 backdrop-blur-lg bg-green-smoke-100/80 text-green-smoke-950"
   >
-    <RouterLink to="/">
-      <img src="@/assets/logo.svg" alt="Logo" class="h-8 w-8" />
-    </RouterLink>
-    <div class="flex items-center pl-24 text-center gap-8">
+    <div class="flex items-center text-center gap-8">
       <RouterLink to="/">
         <span>Home</span>
       </RouterLink>
@@ -16,6 +13,9 @@
         <span>About</span>
       </RouterLink>
     </div>
+    <RouterLink to="/" class="pr-20">
+      <img src="@/assets/logo.svg" alt="Logo" class="h-8 w-8" />
+    </RouterLink>
     <a
       href="https://turo.com"
       target="_blank"
