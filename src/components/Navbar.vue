@@ -3,13 +3,13 @@
     class="fixed w-[calc(100%-64px)] rounded-xl flex justify-between items-center top-8 left-8 right-8 m-8 z-50 shadow-lg p-4 backdrop-blur-lg bg-green-smoke-100/80 text-green-smoke-950"
   >
     <div class="flex items-center text-center gap-8">
-      <RouterLink to="/">
+      <RouterLink to="/" class="hover:text-green-smoke-600 transition-colors duration-200">
         <span>Home</span>
       </RouterLink>
-      <RouterLink to="/vehicles">
+      <RouterLink to="/vehicles" class="hover:text-green-smoke-600 transition-colors duration-200">
         <span>Vehicles</span>
       </RouterLink>
-      <RouterLink to="/about">
+      <RouterLink to="/about" class="hover:text-green-smoke-600 transition-colors duration-200">
         <span>About</span>
       </RouterLink>
     </div>
