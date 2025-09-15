@@ -16,7 +16,7 @@
       <!-- Content -->
       <div class="relative h-full flex items-center justify-center">
         <div class="text-center text-white max-w-4xl mx-auto px-8">
-          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">About LuxZ Rent</h1>
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">About LuxZ Rentals</h1>
           <p class="text-xl md:text-2xl mb-8 text-green-smoke-200">
             Premium luxury vehicle rentals in the heart of Northwest Arkansas
           </p>
@@ -31,7 +31,7 @@
           <div class="flex flex-col gap-8">
             <h2 class="text-4xl font-bold text-green-smoke-950">Our Story</h2>
             <p class="text-lg text-green-smoke-700">
-              Founded in the beautiful landscape of Northwest Arkansas, LuxZ Rent was born from a
+              Founded in the beautiful landscape of Northwest Arkansas, LuxZ Rentals was born from a
               passion for providing exceptional transportation experiences. We understand that every
               journey deserves to be extraordinary, whether you're exploring the Ozark Mountains,
               attending a business meeting in Bentonville, or celebrating a special occasion in
