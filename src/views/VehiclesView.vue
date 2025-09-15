@@ -1,85 +1,89 @@
 <template>
-  <div class="py-8 min-h-screen bg-gradient-to-br from-gray-50 to-blue-100">
-    <div class="max-w-7xl mx-auto px-4">
-      <h1 class="text-center text-gray-800 mb-2 text-4xl font-bold md:text-5xl">
-        Our Vehicles
-      </h1>
+  <div
+    class="min-h-screen bg-gradient-to-br from-green-smoke-50 to-green-smoke-100 pt-48 flex flex-col gap-24 pb-24"
+  >
+    <div class="mx-auto">
+      <h1 class="text-center text-gray-800 mb-2 text-4xl font-bold md:text-5xl">Our Vehicles</h1>
       <p class="text-center text-gray-600 mb-12 text-lg">
         Discover our fleet of premium vehicles available for rent.
       </p>
+    </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-          <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
-            <div class="text-6xl">🚐</div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-gray-800 mb-2 text-xl font-semibold">Camper Van</h3>
-            <p class="text-gray-600 mb-4">Perfect for road trips and camping adventures</p>
-            <div class="flex gap-2 mb-6 flex-wrap">
-              <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                Sleeps 4
-              </span>
-              <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                Kitchen
-              </span>
-              <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                Bathroom
-              </span>
-            </div>
-            <button class="w-full bg-gradient-to-r from-red-400 to-orange-500 text-white font-semibold py-3 px-6 rounded-full hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-              Rent Now
-            </button>
-          </div>
+    <div class="flex flex-col gap-48 px-24">
+      <div class="flex justify-evenly items-center">
+        <div>
+          <h2 class="text-gray-800 text-2xl font-bold">Mercedes Sprinter</h2>
+          <p class="text-gray-600 text-lg leading-relaxed max-w-prose">
+            Experience luxury and reliability with our premium 15-passenger Mercedes Sprinter van.
+            Perfect for group adventures, family reunions, corporate events, or airport transfers.
+            Featuring spacious seating, climate control, and advanced safety systems, this vehicle
+            ensures comfort and peace of mind for all passengers. With ample luggage space and
+            smooth handling, it's the ideal choice for your next group journey.
+          </p>
         </div>
+        <img
+          src="https://placecats.com/200/300"
+          alt="Mercedes Sprinter"
+          class="w-96 object-contain rounded-lg"
+        />
+      </div>
 
-        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-          <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
-            <div class="text-6xl">🚙</div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-gray-800 mb-2 text-xl font-semibold">SUV</h3>
-            <p class="text-gray-600 mb-4">Comfortable and spacious for family trips</p>
-            <div class="flex gap-2 mb-6 flex-wrap">
-              <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                7 Seats
-              </span>
-              <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                AWD
-              </span>
-              <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                Luggage Space
-              </span>
-            </div>
-            <button class="w-full bg-gradient-to-r from-red-400 to-orange-500 text-white font-semibold py-3 px-6 rounded-full hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-              Rent Now
-            </button>
-          </div>
+      <div class="flex justify-evenly items-center">
+        <div>
+          <h2 class="text-gray-800 text-2xl font-bold">BMW 3-Series</h2>
+          <p class="text-gray-600 text-lg leading-relaxed max-w-prose">
+            Drive in style and performance with our elegant BMW 3-Series sedan. Perfect for business
+            meetings, special occasions, or exploring the city in comfort. This luxury vehicle
+            combines German engineering with premium amenities, featuring leather interior, advanced
+            navigation, and responsive handling. Whether you're attending a corporate event or
+            enjoying a romantic dinner date, the BMW 3-Series delivers sophistication and
+            reliability for your journey.
+          </p>
         </div>
+        <img
+          src="https://placecats.com/200/300"
+          alt="BMW 3-Series"
+          class="w-96 object-contain rounded-lg"
+        />
+      </div>
 
-        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
-          <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
-            <div class="text-6xl">🏎️</div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-gray-800 mb-2 text-xl font-semibold">Sports Car</h3>
-            <p class="text-gray-600 mb-4">Experience the thrill of high-performance driving</p>
-            <div class="flex gap-2 mb-6 flex-wrap">
-              <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                2 Seats
-              </span>
-              <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                Convertible
-              </span>
-              <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                Premium
-              </span>
-            </div>
-            <button class="w-full bg-gradient-to-r from-red-400 to-orange-500 text-white font-semibold py-3 px-6 rounded-full hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-              Rent Now
-            </button>
-          </div>
+      <div class="flex justify-evenly items-center">
+        <div>
+          <h2 class="text-gray-800 text-2xl font-bold">Range Rover Sport</h2>
+          <p class="text-gray-600 text-lg leading-relaxed max-w-prose">
+            Conquer any terrain with our powerful Range Rover Sport SUV. Perfect for outdoor
+            adventures, family road trips, or navigating challenging weather conditions. This
+            premium SUV combines luxury comfort with off-road capability, featuring all-wheel drive,
+            advanced terrain response systems, and spacious interior. Whether you're heading to the
+            mountains for skiing, exploring national parks, or simply need extra space for your
+            family, the Range Rover Sport delivers both performance and prestige for your journey.
+          </p>
         </div>
+        <img
+          src="https://placecats.com/200/300"
+          alt="Range Rover Sport"
+          class="w-96 object-contain rounded-lg"
+        />
+      </div>
+
+      <div class="flex justify-evenly items-center">
+        <div>
+          <h2 class="text-gray-800 text-2xl font-bold">Honda Odyssey</h2>
+          <p class="text-gray-600 text-lg leading-relaxed max-w-prose">
+            Experience family-friendly comfort and reliability with our Honda Odyssey minivan.
+            Perfect for family vacations, school carpooling, or group outings with up to 8
+            passengers. This versatile vehicle features sliding doors for easy access, multiple
+            seating configurations, and advanced safety features. With excellent fuel efficiency,
+            spacious cargo area, and Honda's renowned dependability, the Odyssey ensures comfortable
+            and worry-free travel for your entire family. Ideal for long road trips, weekend
+            getaways, or daily family transportation needs.
+          </p>
+        </div>
+        <img
+          src="https://placecats.com/200/300"
+          alt="Honda Odyssey"
+          class="w-96 object-contain rounded-lg"
+        />
       </div>
     </div>
   </div>
